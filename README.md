@@ -1,22 +1,31 @@
-# Template for starting a new project...
+# Scrapy Crawler Template
 
-Every service inside RecipyHub scope must be synchronized with this template
+This repository must be used as template for new Scrapy crawler
+projects.
 
-To start using this template, please remove assets folder and modify the files to your own purpose (this is just an illustrated method of "how to setup").
+## Installing
 
-## CONTAINS
+To install the dependencies for the project:
 
-- Setup to work with github actions (contains one workflow example)
-- Template to create Issues & Pull Requests
+```sh
+poetry install
+```
 
-## How to setup github for projects?
+For dependency managment, [Poetry](https://python-poetry.org/) was trusted.
+So make sure you have it installed, then install the project dependencies.
 
-- First go to settings on your github repository
-  - Go to branches
-    - Click on the button **Add rule**
-    - Give a name for which branch do you wanna setup
-    - Check mark the option **Require pull request reviews before merging** if you wanna reviews on your PRs (generally used only on main branch)
-    - Check mark the option **Require status checks to pass before merging** if you had a workflow settled with github actions
-    - Check mark **Require signed commits** (optional) only if you want to ensure Signed commits
+## Running
 
-Docs: Comming Soon
+To run the crawler:
+
+```sh
+poetry shell
+python crawler
+```
+
+Enter the Poetry shell to make sure you are using the correct Python version.
+Then invoke the crawler.
+
+## Documentation
+
+Each project must build its documentation.
